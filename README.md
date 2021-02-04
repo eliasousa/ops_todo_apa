@@ -1,24 +1,32 @@
-# README
+# Ops Todo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a small rails Todo app api
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- [Ruby](https://github.com/ruby/ruby) 3.0.0 or above installed.
+- [Rails](https://github.com/rails/rails) 6.1.1 or above installed.
+- [MySQL](https://downloads.mysql.com/archives/installer/) 8.0.18
 
-* System dependencies
+## Database
 
-* Configuration
+Setup:
 
-* Database creation
+    bin/rails db:setup && bin/rails db:migrate
 
-* Database initialization
+## Packges
 
-* How to run the test suite
+Setup:
 
-* Services (job queues, cache servers, search engines, etc.)
+    bin/bundle install
 
-* Deployment instructions
+## Running
 
-* ...
+To start a web server for the application, run:
+
+    rails server
+
+To run tests:
+
+    rspec --format doc
+
